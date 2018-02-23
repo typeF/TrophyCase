@@ -13,29 +13,14 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-
-          <div>
-            <nav className="header 1navbar is-warning">
-              <div className='1navbar-brand'>
-                <img src='./images/logo.svg' className="App-logo" alt="logo2" />
-                <div className='1navbar-burger'></div>
-              </div>
-              <div className='home-link 1navbar-menu is-active'>
-                <div className='1navbar-start'>
-                  <a className='1navbar-item' href="/">Home</a>
-                </div>
-              </div>
-            </nav>
-          </div>
-
-          <div className="nav-links tabs is-right is-boxed is-fullwidth">
-            <ul>
-              <li> <span><Link to="/">Home</Link></span></li>
-              <li> <span><Link to="/register">Register</Link></span></li>
-              <li> <span><Link to="/login">Login</Link></span></li>
-              <li> <span><Link to="/private">Private</Link></span></li>
-              <li> <span><Link to="/test">Test</Link></span></li>
-            </ul>
+          <div className="banner">
+            <div className='logo'><a href="/">Trophy Case</a></div>
+            <div className="auth-links">
+              <span><Link to="/register">Register</Link></span>
+              <span><Link to="/login">Login</Link></span>
+              <span><Link to="/private">Private</Link></span>
+              <span><Link to="/test">Test</Link></span>
+            </div>
           </div>
 
           <div className="content">
