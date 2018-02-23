@@ -22,14 +22,14 @@ const cn = {
   password: process.env.PG_PASSWORD
 }
 
-const db = pgp(cn);
+// const db = pgp(cn);
 
-async function tester() {
-  const result = await db.any('SELECT * FROM USERS WHERE active = $1', [true]);
-  console.log(result);
-}
+// async function tester() {
+//   const result = await db.any('SELECT * FROM USERS WHERE active = $1', [true]);
+//   console.log(result);
+// }
 
-tester();
+// tester();
 
 // try {
 //   const users = await db.any('SELECT * FROM USERS WHERE active = $1', [true]);
